@@ -4,9 +4,30 @@
         margin: 0;
         padding: 0;
     }
+
+    @page {
+        size: auto;
+        /* auto is the initial value */
+
+        /* this affects the margin in the printer settings */
+        margin: 0.5in;
+    }
+
+    @media print {
+
+        .no-print,
+        .no-print * {
+            display: none !important;
+        }
+    }
 </style>
 
-<body style="padding: 0.5in; width: 8.5in; height: 11in; border: 1px solid; margin: auto;">
+<head>
+    <title>LokenathKarmakar-SoftwareEngineer-2YoE</title>
+</head>
+
+<body style="width: 8.5in; margin: auto;">
+    <div class="no-print" style="height: 0.5in;"></div>
     <div style="text-align: center; border-top: 1px solid; border-bottom: 3px solid">
         <h2 style="margin-bottom: 0px; margin-top: .75rem;">
             <span style="font-size:1.3em">L</span>OKENATH <span style="font-size:1.3em">K</span>ARMAKAR
