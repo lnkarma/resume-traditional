@@ -1,0 +1,20 @@
+{
+  "name": "resume-traditional",
+  "version": "1.0.0",
+  "description": "A traditional resume built with HTML and CSS",
+  "main": "index.html",
+  "scripts": {
+    "test:capture-baseline": "node tests/capture-baseline.js",
+    "test:visual": "jest tests/visual-regression.test.js",
+    "test:visual:update": "node tests/capture-baseline.js"
+  },
+  "keywords": [],
+  "author": "Lokenath Karmakar",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "pixelmatch": "^5.3.0",
+    "pngjs": "^7.0.0",
+    "puppeteer": "^20.0.0"
+  }
+}
